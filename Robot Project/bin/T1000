@@ -1,0 +1,11 @@
+Möchten wir künftig auch T1000-Roboter herstellen, benötigen wir zunächst eine weitere Klasse T1000,
+welche (,insofern selbe Eigenschaften vorhanden sein sollen,) ebenfalls wie C3PO, R2D2 & Nexus6 von
+der Klasse Machine erbt, wodurch widerum auch das Robot-Interface implementiert wird.
+Die Klasse T1000 ueberschreibt ebenfalls die im RobotInstructions-Interface definierten Methoden und
+implementiert diese entsprechend.
+Falls zusätzliche Funktionalität gefordert ist, wird ein weiteres Interface hinzugefügt, welches T1000
+zusätzlich implementiert.
+Das Robot-Type-Enum wird um entsprechenden Robotertyp erweitert und in der Klasse RobotFactory wird dem
+Switch-Case Konstrukt ein weiterer Case (case T1000) hinzugefuegt um T1000 zu erzeugen.
+Hierbei wird für T1000 ein noch nicht von anderen Robotern genutzter Seriennummer-Bereich definiert und
+entsprechend implementiert.
